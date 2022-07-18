@@ -1,0 +1,88 @@
+<div> <nav class="navbar navbar-expand-lg nav-bar w-100 bg-dark ">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light" href="#">OPPO</a>
+        
+      <button class="navbar-toggler ms-auto bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" onclick="press(2)">
+        
+        <span class="navbar-toggler-icon navButton"></span>
+      </button>
+      
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">OPPO</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" onclick="press(1)"></button>
+        </div>
+        
+        <div class="offcanvas-body bg-dark">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 ">
+            <li class="nav-item ">
+              
+              <a class="nav-link text-light " aria-current="page" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop1" href="#">Smartphone</a>
+              
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop2"  >IoT Products
+                
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" aria-current="page" href="#" >Store</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light " aria-current="page" href="#" >About OPPO</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link text-light" aria-current="page" href="#">ColorOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light " aria-current="page" href="#">Support</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light " aria-current="page" href="#" >Store Location</a>
+            </li>
+          </ul>
+  
+           <a href="/logout">logout</a>
+        </div>
+      </div>
+     
+    
+        
+    </div>
+  </nav>
+<div class="container">
+    <div class="row d-flex align-items-center">
+         {{#each datas}}
+        <div class="col-12 col-sm-6 col-md-3 p-5 ">
+        <div class="card p-0 card-body-home " style="width: 269px;height: 361px;">
+
+    <!-- Card image -->
+   
+        <div class="view overlay ">
+         <img class="card-img-top" src="/images/{{this.imageName}}"
+             alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+             </a>
+         </div>
+
+  <!-- Card content -->
+        <div class="card-body">
+
+    <!-- Title -->
+            <h4 class="card-title">{{this.title1}}</h4>
+    <!-- Text -->
+            <p class="card-text">{{this.description}}</p>
+    <!-- Button -->
+        <a href="#" class="btn btn-outline-dark">Button</a>
+
+    </div>
+
+    </div>
+    </div>
+    {{/each}}
+    
+    </div>
+    </div>
+</div>

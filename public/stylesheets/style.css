@@ -1,0 +1,26 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+}
+
+a {
+  color: #00B7FF;
+}
+.gradient-custom {
+
+  background: #6a11cb;
+  
+  
+  background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+  
+ 
+  background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+  }
+  .card-body-home{
+   
+  background-color: #bbe1f1;
+ 
+  
+    
+  }
+  
